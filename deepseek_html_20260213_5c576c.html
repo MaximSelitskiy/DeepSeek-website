@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компания «Старт» – сайт-визитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА С НАВИГАЦИЕЙ -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Старт</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН / HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <h1 class="hero-title">Создаём цифровые решения для вашего бизнеса</h1>
+                <p class="hero-subtitle">Разработка, дизайн, автоматизация — под ключ. Работаем с 2015 года.</p>
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+            </div>
+        </section>
+
+        <!-- О КОМПАНИИ -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О компании</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>«Старт»</strong> — команда профессионалов в области веб-разработки и автоматизации. Мы помогаем малому и среднему бизнесу заявить о себе в интернете, увеличивать продажи и оптимизировать рутину.</p>
+                        <p>Нам доверяют более 50 клиентов, а средний стаж специалистов — 7 лет. Главная ценность для нас — прозрачность, сроки и результат.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">9 лет</span>
+                            <span class="stat-label">на рынке</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">проектов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">экспертов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- УСЛУГИ -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Сайты под ключ</h3>
+                        <p>Корпоративные сайты, интернет-магазины, лендинги. Адаптивно, быстро, современно.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Веб-приложения</h3>
+                        <p>Личные кабинеты, CRM-системы, инструменты для автоматизации бизнеса.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>UI/UX дизайн</h3>
+                        <p>Интерфейсы, которые удобны пользователям и повышают конверсию.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Поддержка</h3>
+                        <p>Техническая поддержка, доработки, хостинг и обслуживание проектов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p><strong>Офис:</strong> г. Москва, ул. Ленина, д. 15, офис 304</p>
+                        <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:hello@start.ru">hello@start.ru</a></p>
+                        <p><strong>Режим работы:</strong> Пн–Пт, 10:00 – 19:00</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Telegram">📱</a>
+                            <a href="#" aria-label="WhatsApp">💬</a>
+                            <a href="#" aria-label="VK">🌍</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="quickForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Кратко опишите задачу" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-secondary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2025 Компания «Старт». Все права защищены.</p>
+            <p>Сайт-визитка — демо-версия</p>
+        </div>
+    </footer>
+
+    <!-- Простой скрипт для мобильного меню (без внешних зависимостей) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.mobile-toggle');
+            const nav = document.querySelector('.nav');
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    nav.classList.toggle('nav--visible');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
